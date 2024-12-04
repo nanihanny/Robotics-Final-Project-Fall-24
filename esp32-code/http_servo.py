@@ -1,10 +1,8 @@
 import requests
 
-# ESP32 IP address
-esp32_ip = "http://172.20.1.58"  # Replace with the actual IP address of your ESP32
+esp32_ip = "http://172.20.1.58"  
 servo_endpoint = f"{esp32_ip}/servo"
 
-# Function to set the servo angle
 def set_servo_angle(angle):
     if 0 <= angle <= 180:
         params = {'angle': angle}
@@ -19,5 +17,5 @@ def set_servo_angle(angle):
     else:
         print("Angle must be between 0 and 180.")
 
-# Example usage
-#set_servo_angle(120)  # Move the servo to 90 degrees
+# set_servo_angle(120)  
+# set_servo_angle(120) 
